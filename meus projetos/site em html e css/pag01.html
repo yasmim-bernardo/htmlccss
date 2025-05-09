@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página com Carrossel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .carousel {
+            position: relative;
+            max-width: 600px;
+            margin: 30px auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 9s infinite;
+        }
+
+        .slides img {
+            width: 100%;
+            height: auto;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+
+        .instagram-link {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .instagram-link a {
+            text-decoration: none;
+            color: #E1306C;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Meu Site Exemplo</h2>
+    </header>
+
+    <h1>Bem-vindo à minha galeria!</h1>
+
+    <div class="carousel">
+        <div class="slides">
+            <img src="https://picsum.photos/600/300?random=1" alt="Imagem 1">
+            <img src="https://picsum.photos/600/300?random=2" alt="Imagem 2">
+            <img src="https://picsum.photos/600/300?random=3" alt="Imagem 3">
+        </div>
+    </div>
+
+    <div class="instagram-link">
+        <a href="https://www.instagram.com" target="_blank">Visite meu Instagram</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
