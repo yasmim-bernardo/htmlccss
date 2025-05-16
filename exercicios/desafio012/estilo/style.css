@@ -20,11 +20,7 @@
     font-family: var(--fonte1);
 
     }
-section > p{
-    font-family: var(--fonte3);
-    font-size: 2.8vw;
-    line-height: 2em;
-}
+
 
 html,body{
     min-height: 100vh;
@@ -73,6 +69,12 @@ section{
 
 }
 
+section > p{
+    font-family: var(--fonte3);
+    font-size: 2.8vw;
+    line-height: 2em;
+    padding-bottom: 2em;
+}
 
 section.normal{
     background-color: white;
@@ -80,18 +82,32 @@ section.normal{
 }
 
 section.imagem{
-    display: inline-block;
-    padding: 5px;
-    padding-left: 30px;
     background-color: rgb(107, 103, 103);
        color: white;
+       box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.578);
+       background-size: cover;
+       background-attachment: fixed;
 
 }
 
 section.imagem > p{
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.111);
+    display: inline-block;
+    padding: 5px;
+    padding-left: 30px;
+    background-color: rgba(0, 0, 0, 0.408);
+    text-shadow: 1px 1px 0px black;
  
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
 }
 
 footer{
