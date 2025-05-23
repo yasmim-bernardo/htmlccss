@@ -14,13 +14,30 @@
             border-collapse: collapse;
         }
 
+        caption{
+            background-color: rgb(198, 195, 195);
+            padding: 8px;
+        }
+
+        /* efeito zebrado na tabela */
+        
+        tbody > tr:nth-child(ood){ /*2n-1 ( numero de linhas ímpar)*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){ /*2n ( numero de linhas par)*/
+            background-color: lightgray;
+        }
+
+        
         th, td{
             border: 1px solid black;
             padding: 8px;
         }
 
         th{
-            background-color: gray;
+            background-color: rgb(79, 78, 78);
+            color: white;
         }
 
         .num{
@@ -41,6 +58,7 @@
     <!--Anatomia para tabelas grande 
 
     <table>
+        capition (legenda da tabela)
         <thead> (cabeça da tabela)
             tr , td , th 
         </thead>
@@ -54,10 +72,14 @@
 
 
     <table>
+
+        
+            <caption><strong>Populção das Unidades Federativas</strong></caption>
+        
         <thead>
             <tr>
-                <th>Unidade federativa</th>
-                <th>Populção</th>
+                <th scope="col">Unidade federativa</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -173,7 +195,7 @@
         </tbody>
 
         <tfoot>
-            <th>Total</th>
+            <th scope="row">Total</th>
             <strong>
                 <td class="num">212.583.750</td>
             </strong>
