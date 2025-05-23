@@ -13,12 +13,21 @@
 
         table{
             width: 400px;
+            border-collapse: collapse;
         }
 
+        tr.linha{
+            background-color: rebeccapurple;
+        }
         td{
             border: 1px solid black;
         }
-        pa
+
+        td.dado{
+            background-color: yellow;
+        }
+
+        
 
 
 
@@ -38,24 +47,24 @@
     <table>
         <tr> <!--Primeira linha-->
             <td>A1</td>
-            <td>B1</td>
+            <td class="dado">B1</td>
             <td>C1</td>
         </tr>
         <tr> <!-- segunda linha-->
-            <td>A2</td>
+            <td class="dado">A2</td>
             <td>B2</td>
-            <td>B2</td>
+            <td class="dado">C2</td>
         </tr>
         <tr> <!-- terceira linha-->
             <td>A3</td>
-            <td>B3</td>
+            <td class="dado">B3</td>
             <td>C3</td>
         </tr>
-        <td> <!-- quarta linha-->
-            <td>A4</td>
+        <tr> <!-- quarta linha-->
+            <td class="dado">A4</td>
             <td>B4</td>
-            <td>C4</td>
-        </td>
+            <td class="dado">C4</td>
+        </tr>
     </table>
 </body>
 </html>
